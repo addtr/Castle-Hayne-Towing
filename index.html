@@ -6,30 +6,45 @@
   <title>Castle Hayne Towing & Recovery | Wilmington, NC | Open 24 Hours</title>
   <meta name="description" content="Castle Hayne Towing & Recovery — 24-hour professional towing, roadside assistance, lockouts, battery service, winch-out & recovery in Wilmington, NC. Call (910) 675-0224." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Bebas+Neue&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- FLOATING CALL BUTTON (mobile) -->
-  <a href="tel:9106750224" class="float-call" aria-label="Call now">
-    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    <span class="float-call-pulse"></span>
+  <!-- FLOATING CALL BUTTON -->
+  <a href="tel:9106750224" class="float-call" aria-label="Call Castle Hayne Towing">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span class="float-pulse"></span>
   </a>
 
   <!-- NAV -->
   <header class="nav-bar">
     <div class="container nav-inner">
       <a href="#" class="logo">
-        <span class="logo-icon">🚛</span>
-        <span class="logo-text">Castle Hayne <strong>Towing</strong></span>
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="#F59E0B"/>
+            <path d="M6 20h14v-6l-4-5H6v11z" fill="#0F172A" stroke="#0F172A" stroke-width="0.5"/>
+            <path d="M20 20h6v-4l-2-3h-4v7z" fill="#1E293B"/>
+            <circle cx="10" cy="21" r="2.5" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
+            <circle cx="22" cy="21" r="2.5" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
+            <rect x="14" y="12" width="6" height="4" rx="1" fill="#F59E0B" opacity="0.6"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Castle Hayne</span>
+          <span class="logo-sub">TOWING &amp; RECOVERY</span>
+        </div>
       </a>
       <nav class="nav-links">
         <a href="#services">Services</a>
         <a href="#reviews">Reviews</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="tel:9106750224" class="btn btn-sm pulse-btn">Call Now</a>
+        <a href="tel:9106750224" class="nav-cta">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (910) 675-0224
+        </a>
       </nav>
       <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">
         <span></span><span></span><span></span>
@@ -40,166 +55,282 @@
       <a href="#reviews" onclick="toggleMenu()">Reviews</a>
       <a href="#about" onclick="toggleMenu()">About</a>
       <a href="#contact" onclick="toggleMenu()">Contact</a>
-      <a href="tel:9106750224" class="btn">Call Now</a>
+      <a href="tel:9106750224" class="mobile-cta" onclick="toggleMenu()">Call (910) 675-0224</a>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
-    <!-- Animated particles -->
-    <div class="particles" id="particles"></div>
-
-    <!-- Moving road + truck scene -->
-    <div class="road-scene">
-      <div class="road-line"></div>
-      <div class="truck-wrapper">
-        <div class="truck">🚛</div>
-        <div class="truck-lights truck-lights-l"></div>
-        <div class="truck-lights truck-lights-r"></div>
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-noise"></div>
+      <div class="hero-glow hero-glow-1"></div>
+      <div class="hero-glow hero-glow-2"></div>
+      <!-- Animated road lines -->
+      <div class="road-strip">
+        <div class="road-dashes"></div>
       </div>
     </div>
 
-    <!-- Flashing emergency beacon -->
-    <div class="beacon beacon-blue"></div>
-    <div class="beacon beacon-red"></div>
-
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <div class="badge animate-fade-down">Serving Wilmington &amp; Surrounding Areas — Open 24 Hours</div>
-      <h1 class="animate-fade-up">Fast, Reliable Towing<br /><span class="accent typed-text"></span></h1>
-      <p class="hero-sub animate-fade-up delay-1">Professional towing &amp; roadside assistance available 24/7. Accident response, lockouts, recovery, and more — serving Castle Hayne, Wilmington, and all of New Hanover County.</p>
-      <div class="hero-actions animate-fade-up delay-2">
-        <a href="tel:9106750224" class="btn btn-lg btn-primary glow-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          (910) 675-0224
-        </a>
-        <a href="#services" class="btn btn-lg btn-outline">Our Services</a>
+    <div class="container hero-layout">
+      <div class="hero-content">
+        <div class="hero-eyebrow reveal-fast">
+          <span class="eyebrow-dot"></span>
+          Wilmington &amp; New Hanover County
+        </div>
+        <h1 class="hero-heading reveal-fast delay-1">
+          Professional<br />
+          <span class="heading-outline">Towing &amp;</span><br />
+          Recovery
+        </h1>
+        <p class="hero-body reveal-fast delay-2">
+          24-hour towing, roadside assistance, lockouts, battery service, and accident response — dispatched fast, handled professionally.
+        </p>
+        <div class="hero-actions reveal-fast delay-3">
+          <a href="tel:9106750224" class="btn-primary-lg">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Call Now — (910) 675-0224
+          </a>
+          <a href="#services" class="btn-ghost-lg">View Services</a>
+        </div>
+        <div class="hero-trust reveal-fast delay-4">
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Open 24 Hours
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Fast Response
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            Locally Owned
+          </div>
+        </div>
       </div>
-      <div class="hero-stats animate-fade-up delay-3">
-        <div class="stat">
-          <span class="stat-num" data-target="24" data-suffix="/7">0</span>
-          <span class="stat-label">Always Open</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num" data-target="4.2" data-suffix="★" data-decimal="1">0</span>
-          <span class="stat-label">57 Reviews</span>
-        </div>
-        <div class="stat-divider"></div>
-        <div class="stat">
-          <span class="stat-num">Local</span>
-          <span class="stat-label">Family Owned</span>
+
+      <div class="hero-right reveal-fast delay-2">
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <span class="status-dot"></span>
+            Available Now
+          </div>
+          <div class="hero-card-body">
+            <div class="rating-row">
+              <div class="stars-display">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="#F59E0B" opacity=".4"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <span class="rating-label"><strong>4.2</strong> / 57 reviews</span>
+            </div>
+            <blockquote class="hero-quote">
+              "Brandon was extremely helpful and kind. Very reasonable prices and willing to go the extra mile."
+            </blockquote>
+            <div class="quote-attr">— Josephine P., Google Review</div>
+          </div>
+          <div class="hero-card-footer">
+            <div class="card-stat">
+              <span class="card-stat-num" data-target="24" data-suffix="hr">0</span>
+              <span class="card-stat-label">Dispatch</span>
+            </div>
+            <div class="card-stat-divider"></div>
+            <div class="card-stat">
+              <span class="card-stat-num">Fast</span>
+              <span class="card-stat-label">Response</span>
+            </div>
+            <div class="card-stat-divider"></div>
+            <div class="card-stat">
+              <span class="card-stat-num">NC</span>
+              <span class="card-stat-label">Licensed</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Scroll indicator -->
-    <div class="scroll-indicator">
-      <div class="scroll-dot"></div>
+
+    <div class="scroll-hint">
+      <div class="scroll-track"><div class="scroll-thumb"></div></div>
+      <span>Scroll</span>
     </div>
   </section>
 
   <!-- SERVICES -->
   <section class="section" id="services">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What We Do</span>
-        <h2>Full-Service Towing &amp; Recovery</h2>
-        <p>From a flat tire to a full vehicle recovery — our experienced team has the equipment and expertise to handle any situation, any time of day or night.</p>
+      <div class="section-intro reveal">
+        <div class="label-tag">What We Offer</div>
+        <h2 class="section-heading">Full-Service Towing<br />&amp; Roadside Recovery</h2>
+        <p class="section-sub">Whatever the situation — we have the equipment, training, and availability to handle it.</p>
       </div>
+
       <div class="services-grid">
         <div class="service-card reveal stagger-1">
-          <div class="service-icon icon-bounce">🚗</div>
-          <h3>Car Towing</h3>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="1"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Car &amp; Truck Towing</h3>
           <p>Safe, efficient towing for passenger cars, SUVs, and light trucks to any destination — local or long distance.</p>
         </div>
         <div class="service-card reveal stagger-2">
-          <div class="service-icon icon-bounce">🛣️</div>
-          <h3>Local &amp; Long Distance</h3>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l4-8h10l4 8"/><path d="M5 17h14"/><circle cx="7" cy="20" r="1"/><circle cx="17" cy="20" r="1"/><path d="M12 4v4M9 7l3-3 3 3"/></svg>
+          </div>
+          <h3>Long Distance Hauling</h3>
           <p>Need your vehicle transported across town or across the state? We haul locally and long distance with care.</p>
         </div>
         <div class="service-card reveal stagger-3">
-          <div class="service-icon icon-bounce">🔑</div>
-          <h3>Lockouts</h3>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+          </div>
+          <h3>Lockout Service</h3>
           <p>Locked your keys inside? We'll get you back in your vehicle quickly without causing any damage.</p>
         </div>
         <div class="service-card reveal stagger-4">
-          <div class="service-icon icon-bounce">🔋</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>
+          </div>
           <h3>Battery Service</h3>
-          <p>Dead battery? We'll jump-start your vehicle on the spot and get you back on the road fast.</p>
+          <p>Dead battery? We'll jump-start your vehicle on the spot and get you rolling again without the wait.</p>
         </div>
         <div class="service-card reveal stagger-1">
-          <div class="service-icon icon-bounce">🪝</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 6l8 8M6 16l2-2M18 6l-2 2M3 21l5-5M14 4l6 6-10 10-6-6 10-10z"/></svg>
+          </div>
           <h3>Winch Out &amp; Recovery</h3>
           <p>Stuck in a ditch, mud, or off-road? Our recovery team will safely winch your vehicle back onto solid ground.</p>
         </div>
         <div class="service-card reveal stagger-2">
-          <div class="service-icon icon-bounce">🚨</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
           <h3>Accident Response</h3>
-          <p>Quick, professional response to accident scenes — coordinating with law enforcement to clear the road safely.</p>
+          <p>Fast, professional response to accident scenes — coordinating with law enforcement to clear the road safely.</p>
         </div>
         <div class="service-card reveal stagger-3">
-          <div class="service-icon icon-bounce">🔧</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
           <h3>Collision Repairs</h3>
-          <p>Beyond towing, we offer collision repair services to help get your vehicle looking and running like new again.</p>
+          <p>Beyond towing, we offer collision repair services to get your vehicle looking and running like new again.</p>
         </div>
         <div class="service-card reveal stagger-4">
-          <div class="service-icon icon-bounce">🏍️</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2"/><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+          </div>
           <h3>Motorcycle Towing</h3>
-          <p>Specialized equipment and trained hands to tow your motorcycle safely — no scratches, no worries.</p>
+          <p>Specialized equipment and trained hands to tow your motorcycle safely — no scratches, no stress.</p>
         </div>
         <div class="service-card reveal stagger-1">
-          <div class="service-icon icon-bounce">🏗️</div>
+          <div class="service-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
           <h3>Storage Buildings</h3>
-          <p>Need to store a vehicle or equipment? We offer secure storage building options to keep your assets safe.</p>
+          <p>Need to store a vehicle or equipment? We offer secure, accessible storage to keep your assets safe.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- REVIEWS -->
-  <section class="section section-gray" id="reviews">
+  <section class="section section-alt" id="reviews">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">What Customers Say</span>
-        <h2>Trusted by Our Community</h2>
-        <p>Don't take our word for it — here's what real customers have to say about Castle Hayne Towing.</p>
+      <div class="section-intro reveal">
+        <div class="label-tag">Customer Reviews</div>
+        <h2 class="section-heading">Trusted by Drivers<br />Across the Region</h2>
       </div>
-      <div class="rating-summary reveal">
-        <div class="rating-big counter-anim" data-target="4.2" data-decimal="1">0</div>
-        <div class="rating-stars star-anim">★★★★☆</div>
-        <div class="rating-count">Based on 57 reviews</div>
-      </div>
-      <div class="reviews-grid">
-        <div class="review-card reveal stagger-1">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Our boat trailer tire exploded on the highway heading home on Labor Day. Thank y'all for saving us when everyone else was closed! Bobby came to rescue us — very kind. We left the next day with no problems. 100% recommend!"</p>
-          <div class="review-author">
-            <div class="review-avatar">A</div>
-            <div><strong>Ashley Lopez</strong><span>9 months ago</span></div>
+
+      <div class="reviews-layout">
+        <div class="reviews-score reveal slide-left">
+          <div class="score-big">4.2</div>
+          <div class="score-stars">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="#F59E0B" opacity=".35"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <p class="score-label">Based on 57 Google reviews</p>
+          <div class="score-bars">
+            <div class="bar-row"><span>5★</span><div class="bar-track"><div class="bar-fill" style="width:72%"></div></div><span>72%</span></div>
+            <div class="bar-row"><span>4★</span><div class="bar-track"><div class="bar-fill" style="width:14%"></div></div><span>14%</span></div>
+            <div class="bar-row"><span>3★</span><div class="bar-track"><div class="bar-fill" style="width:8%"></div></div><span>8%</span></div>
+            <div class="bar-row"><span>2★</span><div class="bar-track"><div class="bar-fill" style="width:4%"></div></div><span>4%</span></div>
+            <div class="bar-row"><span>1★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span>2%</span></div>
           </div>
         </div>
-        <div class="review-card reveal stagger-2">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"I called and Brandon was absolutely wonderful. Bobby called to verify all the info, then sent photos of where the car was parked AND the key in the dropbox. I will definitely be calling Castle Hayne Towing again!"</p>
-          <div class="review-author">
-            <div class="review-avatar">H</div>
-            <div><strong>Holly Oates-Barker</strong><span>6 months ago</span></div>
+
+        <div class="reviews-cards">
+          <div class="review-card reveal stagger-1">
+            <div class="review-top">
+              <div class="reviewer-avatar">AL</div>
+              <div class="reviewer-info">
+                <strong>Ashley Lopez</strong>
+                <span>9 months ago</span>
+              </div>
+              <div class="review-stars-sm">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <p>"Our boat trailer tire exploded on the highway on Labor Day. Thank y'all for saving us when everyone else was closed! Bobby came to rescue us and was very kind. We left the next day with no problems. 100% recommend!"</p>
           </div>
-        </div>
-        <div class="review-card reveal stagger-3">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Brandon was extremely helpful and kind. Very reasonable prices and willing to go the extra mile to help clients. Will definitely recommend and use them in the future for any towing needs!"</p>
-          <div class="review-author">
-            <div class="review-avatar">J</div>
-            <div><strong>Josephine Pierce</strong><span>5 months ago</span></div>
+          <div class="review-card reveal stagger-2">
+            <div class="review-top">
+              <div class="reviewer-avatar">HO</div>
+              <div class="reviewer-info">
+                <strong>Holly Oates-Barker</strong>
+                <span>6 months ago</span>
+              </div>
+              <div class="review-stars-sm">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <p>"Brandon was wonderful. Bobby called to verify everything, then sent photos of where the car was parked and the key in the dropbox. I have never needed a tow before — if I ever do again, I'm calling Castle Hayne Towing."</p>
           </div>
-        </div>
-        <div class="review-card reveal stagger-4">
-          <div class="review-stars">★★★★★</div>
-          <p class="review-text">"Stranded on I-40 with a flat tire and AAA not sending help. Brandon took my call and within 5 minutes was sending help. They have my first call and recommendation. Thanks y'all!"</p>
-          <div class="review-author">
-            <div class="review-avatar">B</div>
-            <div><strong>Beth P.</strong><span>Flagstaff, AZ</span></div>
+          <div class="review-card reveal stagger-3">
+            <div class="review-top">
+              <div class="reviewer-avatar">JP</div>
+              <div class="reviewer-info">
+                <strong>Josephine Pierce</strong>
+                <span>5 months ago</span>
+              </div>
+              <div class="review-stars-sm">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <p>"Brandon was extremely helpful and kind. Very reasonable prices and willing to go the extra mile to help clients. Will definitely recommend and use them in the future."</p>
+          </div>
+          <div class="review-card reveal stagger-4">
+            <div class="review-top">
+              <div class="reviewer-avatar">BP</div>
+              <div class="reviewer-info">
+                <strong>Beth P.</strong>
+                <span>Flagstaff, AZ</span>
+              </div>
+              <div class="review-stars-sm">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="#F59E0B"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <p>"Stranded on I-40 with a flat and AAA not responding. Brandon took my call and within 5 minutes was sending help. If I need towing in the area again, they have my first call. Thanks y'all!"</p>
           </div>
         </div>
       </div>
@@ -207,57 +338,95 @@
   </section>
 
   <!-- ABOUT -->
-  <section class="section section-dark" id="about">
-    <div class="container about-grid">
-      <div class="about-text reveal slide-left">
-        <span class="section-tag section-tag-light">About Us</span>
-        <h2>Castle Hayne's Most Trusted Towing Company</h2>
-        <p>We're a locally owned and operated towing company proudly serving Castle Hayne, Wilmington, and all of New Hanover County — 24 hours a day, 7 days a week, 365 days a year. No matter the holiday, no matter the hour, we're here when you need us.</p>
-        <p>Our experienced drivers are trained to handle every situation with professionalism and care. When your vehicle breaks down, the last thing you need is more stress — we arrive quickly, treat your vehicle with respect, and get you back on your way.</p>
-        <ul class="check-list">
-          <li class="reveal stagger-1"><span class="check">✓</span> Open 24 hours — including holidays</li>
-          <li class="reveal stagger-2"><span class="check">✓</span> Experienced, professional drivers</li>
-          <li class="reveal stagger-3"><span class="check">✓</span> Transparent, upfront pricing</li>
-          <li class="reveal stagger-4"><span class="check">✓</span> Photo documentation for peace of mind</li>
-          <li class="reveal stagger-1"><span class="check">✓</span> Serving all of New Hanover County</li>
+  <section class="section" id="about">
+    <div class="container about-layout">
+      <div class="about-left reveal slide-left">
+        <div class="label-tag">About Us</div>
+        <h2 class="section-heading">Castle Hayne's Most<br />Trusted Name in Towing</h2>
+        <p>We're a locally owned and operated towing company proudly serving Castle Hayne, Wilmington, and all of New Hanover County — 24 hours a day, 7 days a week, 365 days a year. No matter the holiday, no matter the hour, we answer the call.</p>
+        <p>Our drivers are trained to handle every situation with professionalism and care. When your vehicle breaks down, the last thing you need is more stress — we arrive quickly, handle your vehicle with respect, and get you moving again.</p>
+        <ul class="feature-list">
+          <li>
+            <div class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Open 24 hours — including all holidays
+          </li>
+          <li>
+            <div class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Experienced, professional drivers
+          </li>
+          <li>
+            <div class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Transparent, upfront pricing
+          </li>
+          <li>
+            <div class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Photo documentation for your peace of mind
+          </li>
+          <li>
+            <div class="feature-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            Serving all of New Hanover County
+          </li>
         </ul>
-        <a href="tel:9106750224" class="btn btn-primary btn-lg glow-btn" style="margin-top:1.5rem;">Call for Service</a>
+        <a href="tel:9106750224" class="btn-primary-lg" style="margin-top:2rem;display:inline-flex;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call for Service
+        </a>
       </div>
-      <div class="about-cards reveal slide-right">
-        <div class="info-card">
-          <div class="info-icon">📍</div>
-          <h4>Location</h4>
-          <p>1632-A Castle Hayne Rd<br />Wilmington, NC 28401</p>
-        </div>
-        <div class="info-card">
-          <div class="info-icon">📞</div>
-          <h4>Phone</h4>
-          <p><a href="tel:9106750224">(910) 675-0224</a></p>
-        </div>
-        <div class="info-card">
-          <div class="info-icon">🕐</div>
-          <h4>Hours</h4>
-          <p>Open 24 Hours<br />7 Days a Week</p>
-        </div>
-        <div class="info-card">
-          <div class="info-icon">✉️</div>
-          <h4>Email</h4>
-          <p><a href="mailto:chttg21@gmail.com">chttg21@gmail.com</a></p>
+
+      <div class="about-right reveal slide-right">
+        <div class="info-grid">
+          <div class="info-tile">
+            <div class="info-tile-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <h4>Location</h4>
+            <p>1632-A Castle Hayne Rd<br />Wilmington, NC 28401</p>
+          </div>
+          <div class="info-tile">
+            <div class="info-tile-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <h4>Phone</h4>
+            <p><a href="tel:9106750224">(910) 675-0224</a></p>
+          </div>
+          <div class="info-tile">
+            <div class="info-tile-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h4>Hours</h4>
+            <p>Open 24 Hours<br />7 Days a Week</p>
+          </div>
+          <div class="info-tile">
+            <div class="info-tile-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <h4>Email</h4>
+            <p><a href="mailto:chttg21@gmail.com">chttg21@gmail.com</a></p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CALL TO ACTION BANNER -->
-  <section class="cta-banner">
-    <div class="cta-bg-anim"></div>
-    <div class="container cta-inner reveal">
-      <div>
-        <h2>Stuck on the Road?</h2>
-        <p>We're available 24/7 — call now and we'll dispatch a driver to your location.</p>
+  <!-- CTA BAND -->
+  <section class="cta-band">
+    <div class="container cta-band-inner reveal">
+      <div class="cta-band-text">
+        <h2>Need a Tow Right Now?</h2>
+        <p>We're dispatching drivers 24 hours a day — call us and we'll be on our way.</p>
       </div>
-      <a href="tel:9106750224" class="btn btn-primary btn-xl glow-dark-btn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <a href="tel:9106750224" class="btn-cta-band">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
         (910) 675-0224
       </a>
     </div>
@@ -266,57 +435,64 @@
   <!-- CONTACT -->
   <section class="section" id="contact">
     <div class="container">
-      <div class="section-header reveal">
-        <span class="section-tag">Get In Touch</span>
-        <h2>Contact Us</h2>
-        <p>The fastest way to reach us is by phone. For non-urgent inquiries, fill out the form below and we'll get back to you.</p>
+      <div class="section-intro reveal">
+        <div class="label-tag">Get In Touch</div>
+        <h2 class="section-heading">Contact Us</h2>
+        <p class="section-sub">For emergencies, always call. For general inquiries, use the form below.</p>
       </div>
-      <div class="contact-grid">
-        <div class="contact-info reveal slide-left">
-          <div class="contact-item">
-            <div class="contact-icon">📞</div>
+      <div class="contact-layout">
+        <div class="contact-details reveal slide-left">
+          <div class="contact-row">
+            <div class="contact-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.93 12 19.79 19.79 0 0 1 1.82 3.37 2 2 0 0 1 3.8 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.63a16 16 0 0 0 6.29 6.29l1.19-1.19a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
             <div>
               <strong>Phone</strong>
               <a href="tel:9106750224">(910) 675-0224</a>
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-icon">✉️</div>
+          <div class="contact-row">
+            <div class="contact-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
             <div>
               <strong>Email</strong>
               <a href="mailto:chttg21@gmail.com">chttg21@gmail.com</a>
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-icon">📍</div>
+          <div class="contact-row">
+            <div class="contact-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
             <div>
               <strong>Address</strong>
-              <span>1632-A Castle Hayne Rd<br />Wilmington, NC 28401</span>
+              <span>1632-A Castle Hayne Rd, Wilmington, NC 28401</span>
             </div>
           </div>
-          <div class="contact-item">
-            <div class="contact-icon">🕐</div>
+          <div class="contact-row">
+            <div class="contact-icon-wrap">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
             <div>
               <strong>Hours</strong>
               <span>Open 24 Hours, 7 Days a Week</span>
             </div>
           </div>
-          <div class="map-embed">
-            <iframe
-              title="Castle Hayne Towing Location"
+          <div class="map-wrap">
+            <iframe title="Castle Hayne Towing Location"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.0!2d-77.9469!3d34.3014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89a9f5b4b4b4b4b4%3A0x0!2s1632-A+Castle+Hayne+Rd%2C+Wilmington%2C+NC+28401!5e0!3m2!1sen!2sus!4v1234567890"
-              width="100%" height="240" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy">
+              width="100%" height="220" style="border:0;border-radius:10px;" allowfullscreen loading="lazy">
             </iframe>
           </div>
         </div>
         <form class="contact-form reveal slide-right" onsubmit="handleSubmit(event)">
           <div class="form-row">
             <div class="form-group">
-              <label for="name">Your Name</label>
+              <label for="name">Name</label>
               <input type="text" id="name" name="name" placeholder="John Smith" required />
             </div>
             <div class="form-group">
-              <label for="phone">Phone Number</label>
+              <label for="phone">Phone</label>
               <input type="tel" id="phone" name="phone" placeholder="(910) 555-0100" required />
             </div>
           </div>
@@ -339,10 +515,10 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Describe your situation or ask us a question..."></textarea>
+            <textarea id="message" name="message" rows="4" placeholder="Describe your situation or ask a question..."></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-lg" style="width:100%;">Send Message</button>
-          <div class="form-note">For emergencies, please call us directly at <a href="tel:9106750224">(910) 675-0224</a>. We're open 24/7.</div>
+          <button type="submit" class="form-submit">Send Message</button>
+          <p class="form-note">For emergencies call <a href="tel:9106750224">(910) 675-0224</a> directly — we're open 24/7.</p>
         </form>
       </div>
     </div>
@@ -350,45 +526,61 @@
 
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container footer-inner">
+    <div class="container footer-layout">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <span class="logo-icon">🚛</span>
-          <span class="logo-text">Castle Hayne <strong>Towing</strong></span>
+          <div class="logo-mark">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <rect width="32" height="32" rx="8" fill="#F59E0B"/>
+              <path d="M6 20h14v-6l-4-5H6v11z" fill="#0F172A"/>
+              <path d="M20 20h6v-4l-2-3h-4v7z" fill="#1E293B"/>
+              <circle cx="10" cy="21" r="2.5" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
+              <circle cx="22" cy="21" r="2.5" fill="#0F172A" stroke="#F59E0B" stroke-width="1"/>
+              <rect x="14" y="12" width="6" height="4" rx="1" fill="#F59E0B" opacity="0.6"/>
+            </svg>
+          </div>
+          <div class="logo-text">
+            <span class="logo-name">Castle Hayne</span>
+            <span class="logo-sub">TOWING &amp; RECOVERY</span>
+          </div>
         </a>
-        <p>Professional towing &amp; recovery services in Wilmington, NC and surrounding areas. Open 24 hours a day, 7 days a week.</p>
+        <p>Professional towing &amp; recovery services in Wilmington, NC and surrounding areas. Open 24 hours, 7 days a week.</p>
       </div>
-      <div class="footer-links">
+      <div class="footer-col">
         <h4>Services</h4>
-        <a href="#services">Car Towing</a>
+        <a href="#services">Car &amp; Truck Towing</a>
         <a href="#services">Lockout Service</a>
         <a href="#services">Winch Out &amp; Recovery</a>
         <a href="#services">Accident Response</a>
         <a href="#services">Motorcycle Towing</a>
         <a href="#services">Long Distance Hauling</a>
       </div>
-      <div class="footer-contact">
+      <div class="footer-col">
         <h4>Contact</h4>
-        <p><a href="tel:9106750224">(910) 675-0224</a></p>
-        <p><a href="mailto:chttg21@gmail.com">chttg21@gmail.com</a></p>
-        <p>1632-A Castle Hayne Rd<br />Wilmington, NC 28401</p>
-        <p style="margin-top:0.5rem;color:rgba(255,255,255,0.5);font-size:0.85rem;">Open 24 Hours · 7 Days a Week</p>
+        <a href="tel:9106750224">(910) 675-0224</a>
+        <a href="mailto:chttg21@gmail.com">chttg21@gmail.com</a>
+        <span>1632-A Castle Hayne Rd<br />Wilmington, NC 28401</span>
+        <span class="footer-hours">Open 24 Hours &middot; 7 Days a Week</span>
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="container">
+      <div class="container footer-bottom-inner">
         <p>&copy; 2026 Castle Hayne Towing &amp; Recovery. All rights reserved.</p>
+        <p>Serving Castle Hayne, Wilmington &amp; New Hanover County</p>
       </div>
     </div>
   </footer>
 
   <script>
-    /* ---- Mobile nav ---- */
+    /* Nav */
     function toggleMenu() {
       document.getElementById('mobileMenu').classList.toggle('open');
     }
+    window.addEventListener('scroll', () => {
+      document.querySelector('.nav-bar').classList.toggle('scrolled', window.scrollY > 60);
+    });
 
-    /* ---- Smooth scroll ---- */
+    /* Smooth scroll */
     document.querySelectorAll('a[href^="#"]').forEach(a => {
       a.addEventListener('click', function(e) {
         const t = document.querySelector(this.getAttribute('href'));
@@ -396,97 +588,59 @@
       });
     });
 
-    /* ---- Nav scroll ---- */
-    window.addEventListener('scroll', () => {
-      document.querySelector('.nav-bar').classList.toggle('scrolled', window.scrollY > 50);
-    });
-
-    /* ---- Typed hero text ---- */
-    const phrases = ['When You Need It Most', 'Any Time, Day or Night', '24 Hours a Day', 'Fast & Professional'];
-    let pi = 0, ci = 0, deleting = false;
-    const typedEl = document.querySelector('.typed-text');
-    function type() {
-      const phrase = phrases[pi];
-      if (!deleting) {
-        typedEl.textContent = phrase.slice(0, ++ci);
-        if (ci === phrase.length) { deleting = true; setTimeout(type, 2200); return; }
-      } else {
-        typedEl.textContent = phrase.slice(0, --ci);
-        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; }
-      }
-      setTimeout(type, deleting ? 45 : 80);
-    }
-    setTimeout(type, 900);
-
-    /* ---- Floating particles ---- */
-    const container = document.getElementById('particles');
-    for (let i = 0; i < 28; i++) {
-      const p = document.createElement('div');
-      p.className = 'particle';
-      p.style.cssText = `
-        left:${Math.random()*100}%;
-        top:${Math.random()*100}%;
-        width:${2 + Math.random()*4}px;
-        height:${2 + Math.random()*4}px;
-        animation-delay:${Math.random()*8}s;
-        animation-duration:${6 + Math.random()*10}s;
-        opacity:${0.1 + Math.random()*0.4};
-      `;
-      container.appendChild(p);
-    }
-
-    /* ---- Intersection Observer: scroll reveals ---- */
-    const io = new IntersectionObserver((entries) => {
+    /* Scroll reveal */
+    const io = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
-          // counter animation
-          entry.target.querySelectorAll('.counter-anim, [data-target]').forEach(el => {
+          entry.target.querySelectorAll('[data-target]').forEach(el => {
             if (!el.dataset.animated) animateCounter(el);
+          });
+          // Animate rating bars
+          entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+            const target = bar.style.width;
+            bar.style.width = '0';
+            requestAnimationFrame(() => {
+              bar.style.transition = 'width 1.1s cubic-bezier(0.4,0,0.2,1)';
+              bar.style.width = target;
+            });
           });
           io.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.15 });
-
+    }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-    /* ---- Counter animation ---- */
+    /* Reveal fast (hero) */
+    document.querySelectorAll('.reveal-fast').forEach((el, i) => {
+      el.style.animationDelay = el.classList.contains('delay-1') ? '0.15s'
+        : el.classList.contains('delay-2') ? '0.3s'
+        : el.classList.contains('delay-3') ? '0.45s'
+        : el.classList.contains('delay-4') ? '0.6s' : '0s';
+    });
+
+    /* Counter */
     function animateCounter(el) {
       el.dataset.animated = '1';
       const target = parseFloat(el.dataset.target);
       const suffix = el.dataset.suffix || '';
       const decimal = parseInt(el.dataset.decimal || '0');
-      const duration = 1600;
       const start = performance.now();
-      function update(now) {
-        const progress = Math.min((now - start) / duration, 1);
-        const ease = 1 - Math.pow(1 - progress, 3);
-        const val = target * ease;
-        el.textContent = (decimal ? val.toFixed(decimal) : Math.floor(val)) + suffix;
-        if (progress < 1) requestAnimationFrame(update);
-      }
-      requestAnimationFrame(update);
+      const dur = 1400;
+      (function update(now) {
+        const p = Math.min((now - start) / dur, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = (decimal ? (target * ease).toFixed(decimal) : Math.floor(target * ease)) + suffix;
+        if (p < 1) requestAnimationFrame(update);
+      })(start);
     }
+    document.querySelectorAll('.hero [data-target]').forEach(el => setTimeout(() => animateCounter(el), 800));
 
-    /* ---- Also fire counters for stat-nums in hero (already visible) ---- */
-    document.querySelectorAll('.hero-stats [data-target]').forEach(el => {
-      setTimeout(() => animateCounter(el), 800);
-    });
-
-    /* ---- Star rating pop-in ---- */
-    const starIO = new IntersectionObserver(entries => {
-      entries.forEach(e => {
-        if (e.isIntersecting) { e.target.classList.add('star-pop'); starIO.unobserve(e.target); }
-      });
-    }, { threshold: 0.5 });
-    document.querySelectorAll('.star-anim').forEach(el => starIO.observe(el));
-
-    /* ---- Form submit ---- */
+    /* Form */
     function handleSubmit(e) {
       e.preventDefault();
-      const btn = e.target.querySelector('button[type="submit"]');
-      btn.textContent = 'Message Sent! ✓';
+      const btn = e.target.querySelector('.form-submit');
+      btn.textContent = 'Message Sent ✓';
       btn.style.background = '#16a34a';
       btn.disabled = true;
       setTimeout(() => {
@@ -496,14 +650,6 @@
         e.target.reset();
       }, 3000);
     }
-
-    /* ---- Parallax hero overlay on mousemove ---- */
-    const hero = document.querySelector('.hero');
-    hero.addEventListener('mousemove', e => {
-      const x = (e.clientX / window.innerWidth - 0.5) * 20;
-      const y = (e.clientY / window.innerHeight - 0.5) * 10;
-      document.querySelector('.hero-overlay').style.transform = `translate(${x}px,${y}px) scale(1.05)`;
-    });
   </script>
 </body>
 </html>
